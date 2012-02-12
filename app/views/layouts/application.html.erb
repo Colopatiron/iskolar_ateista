@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>IskolarAteista</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <meta name="description" content="Iskolar Ateista - The PATAS Education Hub">
+    <meta name="author" content="Jem Pimentel">
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!-- Search engine fodder -->
+    <meta name="keywords" content="atheism, agnosticism, Philippines, Filipino, Pinoy, atheist, agnostic, education, resources, books, tutoring, PATAS, Katipunan Foundation, irreligion, library">
+    
+    <title><%= "Iskolar Ateista | " + (@page_title || controller.action_name.titleize) %></title>  
+    
+    <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen, projection' %>
+    <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+    <!--[if lt IE 8]>
+    <%= stylesheet_link_tag 'blueprint/ie', :media => 'screen, projection' %>
+    <![endif]-->
+    
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    
 
-<%= yield %>
 
-</body>
+
+  </head>
+  <body>
+
+    <%= yield %>
+  
+  </body>
 </html>
