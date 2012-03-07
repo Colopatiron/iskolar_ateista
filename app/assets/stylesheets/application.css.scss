@@ -16,16 +16,11 @@ p, ul, li, h1, h2, h3, h4 {
   margin: 0;
 }
 
-h3 {
-  margin: 0px 0px 20px 0px;
-  padding: 0px 0px 5px 0px;
-  font-weight: bold;
-  border-bottom: 1px solid #ccc;
-}
-
 ul {
   list-style-type: none;
 }
+
+
 
 #nav {
   height: 54px;
@@ -76,11 +71,12 @@ ul {
   }
 }
 
-#content, #sidebar{
-  margin: 40px 0px 20px 0px;
+#subheader {
+  height: 54px;
 }
 
 #content {
+  /*
   h4 {
     font-weight: bold;
     font-size: 1.4em;
@@ -88,14 +84,11 @@ ul {
   li p {
     margin: 0px 0px 70px 0px;
   }
+  */
 }
 
 #sidebar p{
-  margin: 0px 0px 10px 0px;
-}
-
-#sidebar {
-  /* background: #FFF700 */
+  margin: 0px 0px 0px 0px;
 }
 
 #footer{

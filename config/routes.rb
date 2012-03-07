@@ -1,5 +1,19 @@
 IskolarAteista::Application.routes.draw do
-  get "info/get_started"
+  resources :products
+
+  get "info/about_patas"
+
+  get "info/about_the_webmaster"
+
+  get "info/site_map"
+
+  get "info/privacy_and_legal"
+
+  get "info/faqs"
+
+  get "info/contact_us"
+
+  get "info/getting_started"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -51,7 +65,7 @@ IskolarAteista::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
-  root :to => 'info#get_started', as: 'get_started'
+  root :to => 'info#getting_started', as: 'home'
   
   # See how all your routes lay out with "rake routes"
 
