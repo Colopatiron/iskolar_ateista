@@ -5,3 +5,107 @@
  *= require_self
  *= require_tree . 
 */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fbf9ef url(header_bg.jpg) repeat-x top;
+}
+
+p, ul, li, h1, h2, h3, h4 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0px 0px 20px 0px;
+  padding: 0px 0px 5px 0px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#nav {
+  height: 54px;
+  
+  ul {
+    float: right;
+    li {
+      float: left;
+      padding: 15px 10px 15px 10px;
+      a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 10px 15px 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    }
+    li.active, li:hover {
+      background: #007eff;
+    }
+  }
+}
+
+#logo {
+  height: 54px;
+}
+
+#mast {
+  height: 198px;
+}
+
+#mast img{
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+#header {
+  h2 {
+    margin: 8px 0px 0px 0px;
+    text-align: center;
+    
+    color: #fff;
+    font-weight: bold;
+    em {
+      color: #FFF700;
+    }
+  }
+}
+
+#content, #sidebar{
+  margin: 40px 0px 20px 0px;
+}
+
+#content {
+  h4 {
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+  li p {
+    margin: 0px 0px 70px 0px;
+  }
+}
+
+#sidebar p{
+  margin: 0px 0px 10px 0px;
+}
+
+#sidebar {
+  /* background: #FFF700 */
+}
+
+#footer{
+  border-top: 2px solid #1400FF;
+  background: #FFF700;
+  height: 36px;
+  p {
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    width: 950px;
+    text-align: center;
+  }
+}

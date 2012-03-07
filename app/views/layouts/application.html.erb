@@ -11,10 +11,10 @@
     <!-- Search engine fodder -->
     <meta name="keywords" content="atheism, agnosticism, Philippines, Filipino, Pinoy, atheist, agnostic, education, resources, books, tutoring, PATAS, Katipunan Foundation, irreligion, library">
     
-    <title><%= "Iskolar Ateista | " + (@page_title || controller.action_name.titleize) %></title>  
+    <title><%= title %></title>  
     
-    <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen, projection' %>
-    <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+    <%= stylesheet_link_tag 'blueprint/screen', media: "screen, projection" %>
+    <%= stylesheet_link_tag 'blueprint/print', media: "print" %>
     <!--[if lt IE 8]>
     <%= stylesheet_link_tag 'blueprint/ie', :media => 'screen, projection' %>
     <![endif]-->
@@ -28,8 +28,46 @@
 
   </head>
   <body>
+    <div class="container">
+      
+      <div id="header" class="span-24 last">
+        <div id="logo" class="span-5 last">
+          <%= link_to (image_tag "Logo.png", alt: "Iskolar Ateista"), info_get_started_path, title: "Home" %>
+        </div>
+        
+        <div id="nav" class="span-19 last">
+          <ul>
+            <li class="active"><%= link_to "Home", info_get_started_path, title: "Home" %></li>
+            <li><%= link_to "Books", "#", title: "Books" %></li>
+            <li><%= link_to "Blog", "#", title: "Blog" %></li>
+            <li><%= link_to "Resources", "#", title: "Resources" %></li>
+            <li><%= link_to "Gallery", "#", title: "Gallery" %></li>
+            <li><%= link_to "PATAS", "#", title: "About PATAS" %></li>
+            <li><%= link_to "About Jem", "#", title: "About Jem" %></li>
+            <li><%= link_to "Forum", "#", title: "Forum" %></li>
+          </ul>
+        </div>
+        <div id="mast" class="span-24 last">
+          <%= image_tag "masthead1.png", alt: "Masthead" %>
+        </div>
+        <div id="subheader" class="span-24 last">
+          <h2>Lorem <em>Ipsum</em> Dolor Sit Amet</h2>
+        </div>
+      </div>
+      
+      <div id="sidebar" class="span-5 last colborder">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      
+      <div id="content" class="span-18 last">
+        <%= yield %>
+      </div>
+      
+      <div id="footer" class="span-24 last">
+        <p>Copyright &copy; 2012 Jem Pimentel and Philippine Atheists and Agnostics Society. All Rights Reserved. </p>
+      </div>
+    </div>
 
-    <%= yield %>
   
   </body>
 </html>
