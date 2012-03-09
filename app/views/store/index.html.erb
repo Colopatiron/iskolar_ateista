@@ -1,2 +1,19 @@
-<h1>Store#index</h1>
-<p>Find me in app/views/store/index.html.erb</p>
+<script type="text/javascript" charset="utf-8">
+   toggle_active_link('nav_books');
+</script>
+
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>The PATAS Library Catalog</h1>
+<% @products.each do |product| %>
+  <div class="entry">
+    <%= image_tag(product.image_url) %>
+    <h3><%= product.title %>&nbsp;&mdash;&nbsp;&nbsp;<span class="author"><%= product.author %></span></h3>
+    <%= sanitize(product.description) %>
+    <div class="price_line">
+      <span class="price"><%= number_to_currency(product.price, unit: "&#8369;") %></span>
+    </div>
+  </div>
+<% end %>

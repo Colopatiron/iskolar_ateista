@@ -7,3 +7,39 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+function toggle_active_link(nav) {
+    $('#nav_home').removeClass('active_nav');
+    $('#nav_books').removeClass('active_nav');
+    $('#nav_blog').removeClass('active_nav');
+    $('#nav_resources').removeClass('active_nav');
+    $('nav_gallery').removeClass('active_nav');
+    $('#nav_patas').removeClass('active_nav');
+    $('#nnav_jem').removeClass('active_nav');
+    $('#nav_forum').removeClass('active_nav');
+  switch (nav) {
+    case 'nav_books':
+      $('#nav_books').addClass('active_nav');
+      break;
+    case 'nav_blog':
+      $('#nav_blog').addClass('active_nav');
+      break;
+    case 'nav_resources':
+      $('#nav_resources').addClass('active_nav');
+      break;
+    case 'nav_gallery':
+      $('#nav_gallery').addClass('active_nav');
+      break;
+    case 'nav_patas':
+      $('#nav_patas').addClass('active_nav');
+      break;
+    case 'nav_jem':
+      $('#nav_jem').addClass('active_nav');
+      break;
+    case 'nav_forum':
+      $('#nav_forum').addClass('active_nav');
+      break;
+    default:
+      $('#nav_home').addClass('active_nav');
+  }
+}

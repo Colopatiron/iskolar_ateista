@@ -23,9 +23,6 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     
-
-
-
   </head>
   <body>
     <div class="container">
@@ -37,38 +34,58 @@
         
         <div id="nav" class="span-19 last">
           <ul>
-            <li class="active"><%= link_to "Home", home_path, title: "Home" %></li>
-            <li><%= link_to "Books", "#", title: "Books" %></li>
-            <li><%= link_to "Blog", "#", title: "Blog" %></li>
-            <li><%= link_to "Resources", "#", title: "Resources" %></li>
-            <li><%= link_to "Gallery", "#", title: "Gallery" %></li>
-            <li><%= link_to "PATAS", "#", title: "About PATAS" %></li>
-            <li><%= link_to "About Jem", "#", title: "About Jem" %></li>
-            <li><%= link_to "Forum", "#", title: "Forum" %></li>
+            <li id="nav_home" class="active"><%= link_to "Home", home_path, title: "Home" %></li>
+            <li id="nav_books"><%= link_to "Books", store_index_path, title: "Books" %></li>
+            <li id="nav_blog"><%= link_to "Blog", "#", title: "Blog" %></li>
+            <li id="nav_resources"><%= link_to "Resources", "#", title: "Resources" %></li>
+            <li id="nav_gallery"><%= link_to "Gallery", "#", title: "Gallery" %></li>
+            <li id="nav_patas"><%= link_to "PATAS", "#", title: "About PATAS" %></li>
+            <li id="nav_jem"><%= link_to "About Jem", "#", title: "About Jem" %></li>
+            <li id="nav_forum"><%= link_to "Forum", "#", title: "Forum" %></li>
           </ul>
         </div>
         <div id="mast" class="span-24 last">
           <%= image_tag "masthead1.png", alt: "Masthead" %>
         </div>
         <div id="subheader" class="span-24 last">
-          <h2>Lorem <em>Ipsum</em> Dolor Sit Amet</h2>
+          <h2><em>Think</em> Without Fear, <em>Live</em> Without Delusions</h2>
         </div>
       </div>
 
-      <div id="sidebar" class="span-5 colborder last">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <hr class="space" />
+      <div id="sidebar" class="span-5 box">
+        <div id="welcome">
+          <p>Welcome to <em>Iskolar Ateista</em>!</p>
+          <p> Today is <%= Date.today.to_s(:long) %> </p>
+          <hr class="space" />
+        </div>
+        
+        <div id="sidebar_links">
+          <ul>
+            <li><%= link_to "Getting Started", home_path, title: "Getting Started" %></a></li>
+            <li><%= link_to "FAQs", info_faqs_path, title: "FAQs" %></a></li>
+            <li><%= link_to "Contact Us", info_contact_us_path, title: "Contact Us" %></a></li>
+            <li><%= link_to "Site Map", info_site_map_path, title: "FAQs" %></a></li>
+          </ul>
+        </div>
       </div>
       
       <div id="content" class='<%= controller.controller_name.to_s + '_class' %> span-18 last'>
         <%= yield %>
       </div>
       
-      <div id="footer" class="span-24 prepend-top last">
-        <p>Copyright &copy; 2012 Jem Pimentel and Philippine Atheists and Agnostics Society. All Rights Reserved. </p>
+      <div id="footer" class="span-24 prepend-top clear last">
+        <p>
+          Copyright &copy; 2012 Jem Pimentel. All Rights Reserved. | <%= link_to "Privacy", info_privacy_and_legal_path, title: "Privacy" %> | <%= link_to "Legal", info_privacy_and_legal_path, title: "Legal" %> | <%= link_to "Email the Webmaster", "mailto: colopatiron2009@hotmail.com", title: "Email the Webmaster" %>
+        </p>
       </div>
 
     </div>
-
-  
+    
+    <!--
+    TODO Add placeholder for ads
+    TODO Make pretty visuals for "personal" page
+    -->
+    
   </body>
 </html>
