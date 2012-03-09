@@ -10,8 +10,11 @@
     </td>
     <td class="list_description">
       <dl>
-        <dt>
+        <dt class="title">
           <%= product.title %>
+        </dt>
+        <dt class="author">
+          By: <%= product.author %>
         </dt>
         <dd>
           <%= truncate(strip_tags(product.description),

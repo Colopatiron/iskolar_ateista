@@ -29,6 +29,7 @@ Product.create(title: 'I Sold My Soul on Ebay',
   price: 34.95)
 
 Product.create(title: 'CoffeeScript',
+  author: 'John Doe',
   description: 
     %{<p>
         CoffeeScript is JavaScript done right. It provides all of JavaScript's
@@ -41,6 +42,7 @@ Product.create(title: 'CoffeeScript',
   price: 36.00)
 
 Product.create(title: 'Programming Ruby 1.9',
+  author: 'Jane Doe',
   description:
     %{<p>
         Ruby is the fastest growing and most exciting dynamic language
@@ -52,6 +54,7 @@ Product.create(title: 'Programming Ruby 1.9',
 
 
 Product.create(title: 'Rails Test Prescriptions',
+  author: 'Jimmy Doe',
   description: 
     %{<p>
         <em>Rails Test Prescriptions</em> is a comprehensive guide to testing

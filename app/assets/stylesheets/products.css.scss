@@ -24,10 +24,15 @@
       margin: 0;
     }
 
-    dt {
+    dt.title {
       color:        #244;
       font-weight:  bold;
       font-size:    larger;
+    }
+    
+    dt.author {
+      color:        #244;
+      font-style: italic;
     }
 
     dd {
