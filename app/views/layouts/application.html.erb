@@ -55,9 +55,10 @@
       <hr class="space" />
       <div id="sidebar" class="span-5 box">
         <div id="welcome">
-          <p>Welcome to <em>Iskolar Ateista</em>!</p>
+          <p>Welcome to Iskolar Ateista!</p>
           <p> Today is <%= Date.today.to_s(:long) %> </p>
           <hr class="space" />
+          <hr class"prepend-top">
         </div>
         
         <div id="sidebar_links">
@@ -70,7 +71,7 @@
         </div>
       </div>
       
-      <div id="content" class='<%= controller.controller_name.to_s + '_class' %> span-18 last'>
+      <div id="content" class='<%= controller.controller_name.to_s + '_class' %> span-17 push-1 last'>
         <%= yield %>
       </div>
       
@@ -85,6 +86,8 @@
     <!--
     TODO Add placeholder for ads
     TODO Make pretty visuals for "personal" page
+    TODO CSS Header Effects
+    TODO Cycle masthead images
     -->
     
   </body>
