@@ -2,5 +2,42 @@
    toggle_active_link('nav_home');
 </script>
 
-<h1>Info#site_map</h1>
-<p>Find me in app/views/info/site_map.html.erb</p>
+<div class="span 17 last">
+  <h1>Site Map</h1>
+  <hr class="prepend-top">
+  <hr class="space">
+  <div class="span-7 lists colborder">
+    <h2>Top-Level Navigation</h2>
+    <hr class="space">
+    <ul class="success">
+      <li><%= link_to "Home", home_path, title: "Home" %>
+      <li><%= link_to "Books", store_index_path, title: "Books" %>
+      <li>
+        <%= link_to "Blog", "#", title: "Blog" %>
+        <ul>
+          <li> <%= link_to "News", "#", title: "News" %>
+          <li> <%= link_to "Blog Entries", "#", title: "Blog Entries" %>
+        </ul>
+      </li>
+      <li><%= link_to "Resources", "#", title: "Resources" %>
+      <li><%= link_to "Gallery", "#", title: "Gallery" %>
+      <li><%= link_to "About PATAS", info_about_patas_path, title: "About PATAS" %>
+      <li><%= link_to "About the Webmaster", info_about_the_webmaster_path, title: "About the Webmaster" %>
+        <ul>
+          <li> <%= link_to "Achievements", "#", title: "Achievements" %>
+          <li> <%= link_to "Services Offered", "#", title: "Services Offered" %>
+        </ul>
+      <li><%= link_to "Forum", "#", title: "Forum" %>
+    </ul>
+  </div>
+  <div class="span-9 lists last">
+    <h2>Utility Pages</h2>
+    <hr class="space">
+    <ul class="info">
+      <li><%= link_to "Getting Started", home_path, title: "Getting Started" %></li>
+      <li><%= link_to "FAQs", info_faqs_path, title: "FAQs" %></li>
+      <li><%= link_to "Contact Us", info_contact_us_path, title: "Contact Us" %></li>
+      <li><%= link_to "Site Map", info_site_map_path, title: "Site Map" %></li>
+    </ul>
+  </div>
+</div>

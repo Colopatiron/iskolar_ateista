@@ -2,5 +2,26 @@
    toggle_active_link('nav_home');
 </script>
 
-<h1>Info#contact_us</h1>
-<p>Find me in app/views/info/contact_us.html.erb</p>
+<div class="span 17 last">
+  <h1>Contact Us</h1>
+  <hr class="prepend-top">
+  <hr class="space">
+  <div class="span-7 lists colborder">
+    <h2>Jem Pimentel</h2>
+    <hr class="space">
+    <%= link_to (image_tag "facebook.jpg", alt: "Facebook", width: 200, height: 200), "http://www.fb.com/jem.pimentel" %>
+    <ul class="success">
+      <li><%= link_to "Facebook", "http://www.fb.com/jem.pimentel" %>
+      <li><%= link_to "Email: colopatiron2009@hotmail.com", "mailto: colopatiron2009@hotmail.com" %>
+      <li>Phone: 656 8895
+    </ul>
+  </div>
+  <div class="span-9 lists last">
+    <h2>Philippine Atheists and Agnostics Socity (PATAS)</h2>
+    <hr class="space">
+    <ul class="info">
+      <li><%= link_to "Official Facebook Group", "http://www.facebook.com/groups/Patas.co/" %></li>
+      <li><%= link_to "Official Site", "http://www.patas.co" %></li>
+    </ul>
+  </div>
+</div>
