@@ -3,7 +3,7 @@
 </script>
 
 <% if notice %>
-<p id="notice"><%= notice %></p>
+<p class="notice"><%= notice %></p>
 <% end %>
 
 <h1>The PATAS Library Catalog</h1>
@@ -14,6 +14,7 @@
     <%= sanitize(product.description) %>
     <div class="price_line">
       <span class="price"><%= number_to_currency(product.price, unit: "&#8369;") %></span>
+      <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
     </div>
   </div>
 <% end %>
