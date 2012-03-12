@@ -24,7 +24,6 @@ ul {
   zoom: 1;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
 	filter: alpha(opacity=75);
-	-moz-opacity:0.75;
 	-khtml-opacity: 0.75;
 	opacity: 0.75;
 }
@@ -70,7 +69,6 @@ ul {
     zoom: 1;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   	filter: alpha(opacity=100);
-  	-moz-opacity:1;
   	-khtml-opacity: 1;
   	opacity: 1;
 	}
@@ -121,6 +119,25 @@ ul {
     color: #fff;
     font-size: 90%;
   }
+  
+  #cart {
+    /* font-size: smaller; */
+    font-size: 95%;
+    color: #000080;
+    table {
+      border-top: 3px groove #000080;
+      border-bottom: 3px groove #000080;
+      margin-bottom: 10px;
+      margin-top: 10px;
+
+      td {
+        border-top: 1px dotted #000080;
+        border-bottom: 1px dotted #000080;
+        background-color: transparent;
+      }
+    }
+  }
+  
   #sidebar_links {
     ul {
     padding: 0;
