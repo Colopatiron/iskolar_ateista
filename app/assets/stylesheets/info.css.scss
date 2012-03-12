@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.mis_vis {
+.lists {
   ul li {
     list-style-type: circle;
     margin: 10px 0px 10px 20px;
@@ -20,6 +20,11 @@ img {
 
 .paragraphs p{
   margin-top: 10px;
-  margin-bottom: 10px;
-  
+  margin-bottom: 10px; 
+}
+
+.larger p{
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  font-size: 150%;
 }
