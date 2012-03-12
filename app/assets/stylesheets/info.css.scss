@@ -1,3 +1,25 @@
 // Place all the styles related to the Info controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.mis_vis {
+  ul li {
+    list-style-type: circle;
+    margin: 10px 0px 10px 20px;
+  }
+  
+  p {
+    text-indent: 20px;
+    margin-left: 20px;
+  }
+}
+
+img {
+  margin: 0px 20px 10px 0px;
+}
+
+.paragraphs p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
