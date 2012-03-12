@@ -4,9 +4,33 @@
 
 <h1>Maligayang Pagbisita sa Iskolar Ateista!</h1>
 <h2><em>(Welcome to the Scholarly Atheist!)</em></h2>
+<hr class="prepend-top">
+<hr class="space">
 
-<p class="notice">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p class="notice">Mauris facilisis, nibh vitae commodo congue, nulla lacus bibendum quam, at pretium urna erat ullamcorper diam. Nullam fermentum mi ut elit elementum pulvinar. Phasellus congue pretium dui, sit amet posuere metus aliquet quis. Phasellus sollicitudin justo sit amet velit mollis quis faucibus risus egestas. Aenean pellentesque, massa et imperdiet laoreet, risus massa fermentum quam, sit amet scelerisque lacus justo nec quam. Aliquam felis lacus, euismod vel gravida vitae, molestie at velit. Phasellus vestibulum tortor at metus interdum non rhoncus velit commodo. Fusce euismod, enim in adipiscing posuere, tellus eros tincidunt magna, sit amet pharetra ligula magna ac nisl. Aliquam elementum tellus eu dui porttitor eu pretium tellus mattis. Quisque fringilla facilisis nisi id bibendum. Vivamus varius, erat sit amet feugiat bibendum, dui quam tincidunt nisl, pulvinar auctor purus nulla ac lorem. Fusce fermentum interdum urna, vitae eleifend magna ultricies luctus.</p>
-
-<p class="notice">Morbi fringilla blandit elit, sit amet bibendum urna molestie eget. Nulla sollicitudin, urna sed consectetur rhoncus, lorem dolor rhoncus erat, non egestas lorem purus at lacus. Sed purus diam, fermentum vel adipiscing quis, sollicitudin at dolor. Duis cursus tempor augue, sit amet imperdiet est porta quis. Vestibulum varius tellus a diam faucibus eget egestas lorem vestibulum. Cras nec enim non odio imperdiet laoreet sed iaculis tellus. Curabitur id enim et est accumsan ultricies sit amet id justo. Etiam pretium dignissim auctor. Quisque nisl justo, dignissim eu rhoncus vitae, pellentesque ut nibh. Pellentesque ac ante ac libero varius viverra sit amet at lacus. Cras ac nisl in neque sagittis posuere ut non metus. Morbi ac pretium odio. Sed diam ipsum, fermentum ut egestas eu, pulvinar vestibulum dui. Sed at luctus ipsum. Quisque vulputate, magna nec pretium hendrerit, lacus sapien iaculis leo, a aliquet enim nulla ac nunc.</p>
+<div class="span 17 last">
+  <%= image_tag "patas_logo.jpg", alt: "PATAS Logo", class: "left" %>
+  <div class="larger">
+    <p>Thank you for visiting the official education hub and online library catalog of the <em>Philippine Atheists and Agnostics Society</em>. It has been an exciting journey developing this site and we hope you'll have half as much fun browsing it as we had making it. Sure, many things are still rough around the edges, but with your help, we can make this home of atheist education in the Philippines one of the best the web has to offer. Do send us your <%= link_to "suggestions!", "mailto: colopatiron2009@hotmail.com" %></p>
+    <p>This are many things to discover here, but before you feel overwhelmed, know that you've started at the right place! Here, we'll give you descriptions of the pleasant things in store for you in <em>Iskolar Ateista</em> (and the developments that you have to watch out for). Go ahead! Look around, shop, browse our books &mdash; we're sure that something will catch your eye. From all of us in PATAS, enjoy your stay and happy surfing!</p>
+  </div>
+  <hr class="space">
+  <hr>
+  <div class="span-7 clear lists colborder">
+    <h2><%= link_to "Online Library", store_index_path %></h2>
+    <p class="success prepend-top"><strong>Begin by browsing our selection of atheism and agnosticism <%= link_to "books", store_index_path %> from the PATAS library! We have a huge selection, and eventually all of the books will be available here for purchase. Never hear that a Richard Dawkins book is out of stock ever again!</strong></p>
+  </div>
+  <div class="span-9 lists last">
+   <h2><%= link_to "About PATAS", info_about_patas_path %></h2>
+    <p class="info prepend-top"><strong>Find out more about the Philippine Atheists and Agnostics Society and the stalwart people behind them <%= link_to "here!", info_about_patas_path %></strong></p>
+  </div>
+  <hr class="space">
+  <hr>
+    <div class="span-7 clear lists colborder">
+    <h2><%= link_to "About the Webmaster", info_about_the_webmaster_path %></h2>
+    <p class="success prepend-top"><strong>If you want to know more information about <em>Jem Pimentel</em>, the guy who developed this site, than you can ever have use for... click <%= link_to "here", info_about_the_webmaster_path %>! This is also the place to visit if you are interested in academic tutorial sessions (from moi!) and if you are looking for a programmer/web developer.</strong></p>
+  </div>
+  <div class="span-9 lists last">
+   <h2><%= link_to "FAQs", info_faqs_path %></h2>
+    <p class="success prepend-top"><strong>Got a burning question that just needs answering (about this site)? Well then, your queries shall find the answers they seek <%= link_to "here.", info_faqs_path %></strong></p>
+  </div>
+</div>
