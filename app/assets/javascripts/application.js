@@ -13,7 +13,7 @@ function toggle_active_link(nav) {
     $('#nav_home').removeClass('active_nav');
     $('#nav_books').removeClass('active_nav');
     $('#nav_blog').removeClass('active_nav');
-    $('#nav_resources').removeClass('active_nav');
+    $('#nav_videos').removeClass('active_nav');
     $('nav_gallery').removeClass('active_nav');
     $('#nav_patas').removeClass('active_nav');
     $('#nnav_jem').removeClass('active_nav');
@@ -25,8 +25,8 @@ function toggle_active_link(nav) {
     case 'nav_blog':
       $('#nav_blog').addClass('active_nav');
       break;
-    case 'nav_resources':
-      $('#nav_resources').addClass('active_nav');
+    case 'nav_videos':
+      $('#nav_videos').addClass('active_nav');
       break;
     case 'nav_gallery':
       $('#nav_gallery').addClass('active_nav');

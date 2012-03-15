@@ -1,4 +1,8 @@
 IskolarAteista::Application.routes.draw do
+  get "media/gallery"
+
+  get "media/videos"
+
   resources :orders
 
   resources :line_items
