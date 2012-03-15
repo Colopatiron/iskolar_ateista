@@ -12,22 +12,24 @@
     <ul class="success">
       <li><%= link_to "Home", home_path, title: "Home" %>
       <li><%= link_to "Books", store_index_path, title: "Books" %>
-      <li>
+      <!-->
+        <li>
         <%= link_to "Blog", "#", title: "Blog" %>
         <ul>
           <li> <%= link_to "News", "#", title: "News" %>
           <li> <%= link_to "Blog Entries", "#", title: "Blog Entries" %>
         </ul>
       </li>
-      <li><%= link_to "Resources", "#", title: "Resources" %>
-      <li><%= link_to "Gallery", "#", title: "Gallery" %>
+    -->
+      <li><%= link_to "Videos", media_videos_path, title: "Videos" %>
+      <li><%= link_to "Gallery", media_gallery_path, title: "Gallery" %>
       <li><%= link_to "About PATAS", info_about_patas_path, title: "About PATAS" %>
       <li><%= link_to "About the Webmaster", info_about_the_webmaster_path, title: "About the Webmaster" %>
         <ul>
-          <li> <%= link_to "Achievements", "#", title: "Achievements" %>
-          <li> <%= link_to "Services Offered", "#", title: "Services Offered" %>
+          <li> <%= link_to "Achievements", info_about_the_webmaster_path, title: "Achievements" %>
+          <li> <%= link_to "Services Offered", info_about_the_webmaster_path, title: "Services Offered" %>
         </ul>
-      <li><%= link_to "Forum", "#", title: "Forum" %>
+      <li><%= link_to "Forum", forums_show_path, title: "Forum" %>
     </ul>
   </div>
   <div class="span-9 lists last">
