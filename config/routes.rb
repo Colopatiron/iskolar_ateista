@@ -1,4 +1,6 @@
 IskolarAteista::Application.routes.draw do
+  get "forums/show"
+
   get "media/gallery"
 
   get "media/videos"
